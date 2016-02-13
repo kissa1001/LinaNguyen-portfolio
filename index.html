@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lina Nguyen</title>
+	<link rel="shortcut icon" href="img/logo.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+    <nav id="sidebar-wrapper">
+         <ul class="sidebar-nav">
+            <a id="menu-close" href="#"><i class="fa fa-times"></i></a>
+            <li class="sidebar">
+                <a href="#header"  onclick = $("#menu-close").click(); >Lina Nguyen</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#projects" onclick = $("#menu-close").click(); >Projects</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header id="header" class="header">
+	    <div class="section" id="section">
+		    <video autoplay loop muted id="myVideo">
+			    <source src="img/video.mp4" type="video/mp4">
+			    <source src="img/video.webm" type="video/webm">
+				<source src="img/video.ogv" type="video/ogv">
+		    </video>
+		    <div class="layer">
+		    	<div class="name">
+		    	    <h1 class="animation-element bounce-up">Lina Nguyen</h1>
+		    	    <hr class="animation-element slide-left">
+		    	    <p class="animation-element bounce-up">Front-End Web Developer</p>
+		    	</div>
+            </div>
+		</div>
+	    <div class="arrow">
+		    <a href="#about" class="btn">
+                <i class="fa fa-angle-down fa-3x"></i>
+            </a>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+    	<div class="intro animation-element slide-left">
+    		<h2>Passion for code</h2>
+    	    <h3>Why I choose to be a programmer!</h3>
+    	    <button class="btn-arrow-right" id="btn-bg"><a href="#"></a><span class="fa fa-user"> Background</span></button>
+    	    <button class="btn-arrow-right" id="btn-skls"><a href="#"></a><span class="fa fa-check-square"> My Skills</span></button>
+    	</div>
+    	<div id="background">
+    		<h3>A little bit about me...</h1>
+                <hr class="small1">
+            <p>Well, I got my education as an international economist in Ukraine. But a couple month ago I have really got into on a new career path- to become a <strong>FrontEnd Web Developer</strong>. So I decided to learn everything by myself. </p>
+            <p>I am fast learner, hard worker team player. I enjoy a challenge and look for the opportunity to expand and develop my skill set.</p>    
+    	</div>
+    	<div id="myskills">
+            <h3>My skills</h3>
+                <table id="skills">
+                    <tr>
+                        <td>
+                            <div class="subject code">
+                                <h6 class="title">HTML <i class="fa fa-code"></i> CSS </h6>
+                                <div class="content">Strong understanding of markup and styling languages. Proficient and able to design and build responsive layouts with web development best practices.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subject responsive">
+                                <h6 class="title">Responsive<i class="fa fa-mobile"></i>Design</h6>
+                                <div class="content">Familiar with Responsive Design and and page speed optimization best practices. Working understanding of mobile-first design and development.
+                                </div>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="subject development">
+                                <h6 class="title">JavaScript<i class="fa fa-cogs"></i>jQuery</h6>
+                                <div class="content">Beginner level knowledge about JavaScript. Can use jQuery to make UI interactions on webpages.
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subject design">
+                                <h6 class="title">Web<i class="fa fa-paint-brush"></i>Designing</h6>
+                                <div class="content">Familiar with making website sketch with Photoshop. Strong understanding about latest website designing trends.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+    	</div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+                    <h2 class="animation-element slide-left">Projects</h2>
+                    <hr class="small">
+                        <dl class="direction-aware-hover bg-1 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>Quit Smoke</h4>
+                                <p><span>Responsive Bootstrap Webpage</span>
+						        <br>Skills used:Twitter Bootstrap, HTML, CSS<br></p>
+                                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>
+						<dl class="direction-aware-hover bg-2 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>Quizz App</h4>
+                                <p><span>mini-quizz game</span>
+                                <br>Skills used:HTML,CSS,jQuery,javaScript<br></p>
+                                <a href="http://kissa1001.github.io/QuizzApp/" target="_blank">
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/QuizzApp/tree/master" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>
+						<dl class="direction-aware-hover bg-3 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>HTML email</h4>
+                                <p><span>Reasponsive HTML email</span>
+						        <br>Skills used:HTML,CSS<br></p>
+                                <a href="http://kissa1001.github.io/Apple-HTML-Email/" target="_blank">
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/Apple-HTML-Email" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>
+						<dl class="direction-aware-hover bg-4 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>Shopping list App</h4>
+                                <p><span>jquery shopping list</span>
+                                <br>Skills used:HTML,CSS,jQuery<br></p>
+                                <a href="http://kissa1001.github.io/Shopping-list/" target="_blank">
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/Shopping-list/tree/gh-pages" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>
+						<dl class="direction-aware-hover bg-5 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>Street Fighter</h4>
+                                <p><span>jQuery mini-game</span>
+                                <br>Skills used:HTML,CSS,jQuery<br></p>
+                                <a href="http://kissa1001.github.io/jquery-streetfighter/" target="_blank" >
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/jquery-streetfighter" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>
+                        <dl class="direction-aware-hover bg-6 animation-element bounce-up">
+                            <dt class="direction-aware-hover__left"></dt>
+                            <dt class="direction-aware-hover__right"></dt>
+                            <dt class="direction-aware-hover__top"></dt>
+                            <dt class="direction-aware-hover__bottom"></dt>
+                            <dd class="direction-aware-hover__content">
+                                <h4>Hot or Cold</h4>
+                                <p><span>Hot || Cold Game</span>
+                                <br>Skills used:jQuery<br></p>
+                                <a href="http://kissa1001.github.io/hot-or-cold/" target="_blank">
+                                    <div class="button-fill green">
+                                        <div class="button-text">View Page</div>
+                                        <div class="button-inside">
+                                        <div class="inside-text">View Page</div>
+                                        </div>
+                                    </div></a><a href="https://github.com/kissa1001/hot-or-cold/tree/master" target="_blank">
+                                    <div class="button-fill grey">
+                                        <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
+                                        <div class="button-inside">
+                                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
+                                        </div>
+                                    </div></a>
+                            </dd>
+                        </dl>            
+    </section>
+    <!-- Aside -->	
+    <aside id="aside">
+    	<div class="content animation-element slide-left">
+    		<h5>Thank you for taking the time to visit my <span>portfolio</span>. Want to <span>hire</span> me,<br> have <span>questions</span> about my work or just want to say <span>hello</span>?<br> Go ahead and send me an email or use the contact form <span>below!</span></h5>
+    	</div>
+    </aside>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+    	<h2 class="animation-element slide-left">Drop me a line!</h2>
+	    <hr class="small1">
+	    <div class="grid animation-element bounce-up">
+    	    <div class="col-1-3">
+    		    <h4><span class="fa fa-map-marker"></span> Charlotte, US</h4>
+                <h4><span class="fa fa-phone"></span> +1 (704)477-9941</h4>
+                <h4><span class="fa fa-envelope"></span> kissa101295@gmail.com</h4>
+    	    </div>
+    	    <div class="col-2-3">
+                        <form id="contactForm" action="form-process.php" method="POST" name="contactform" data-toggle="validator" class="contactForm">
+                            <input type="text" class="form-control" name="name" id="name" style="border-color:#37D4AA;" placeholder="Your name" required data-error="NEW ERROR MESSAGE">
+                            <div class="help-block with-errors"></div>
+                            <input type="email" class="form-control" name="email" id="email" style="border-color:#37D4AA;" placeholder="Your email" required>
+                            <div class="help-block with-errors"></div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-control" style="border-color:#37D4AA;" rows="5" placeholder="Enter your message" required></textarea>
+                                <div class="help-block with-errors"></div>
+                            <button type="submit" id="form-submit" class="btn-submit pull-right">Submit</button>
+                            <div class="clearfix"></div>
+                        </form>
+    	    </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+    	<p>Connect with me via</p>
+        <ul class="social">
+            <li><a class="icons social-facebook animation-element flip" href="https://www.facebook.com/linka.nguyen.5" target="_blank">
+		                            <i class="fa fa-facebook"></i>
+                            </a></li>
+            <li><a class="icons social-googleplus animation-element flip" href="https://plus.google.com/u/0/118163322112547006876/posts" target="_blank">
+		                            <i class="fa fa-google-plus"></i>
+                            </a></li>
+            <li><a class="icons social-git animation-element flip" href="https://github.com/kissa1001" target="_blank">
+		                            <i class="fa fa-github-alt "></i>
+                            </a></li>
+        </ul>
+    </footer>
+
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+	
+// Smooth scroll
+$(document).ready(function(){
+$('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    var target = this.hash,
+    $target = $(target);
+
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+    }, 1200, 'swing', function () {
+        window.location.hash = target;
+    });
+});
+});
+//about me toggle
+$(function() {
+$( "#btn-bg" ).click(function() {
+$("#myskills").hide();
+$( "#background" ).slideToggle('slow');
+});
+});
+$(function() {
+$( "#btn-skls" ).click(function() {
+$( "#myskills" ).slideToggle('slow');
+$("#background").hide();
+});
+});
+// Projects Buttons
+    $(".button-fill").hover(function () {
+    $(this).children(".button-inside").addClass('full');
+    }, function() {
+    $(this).children(".button-inside").removeClass('full');
+    });
+//animation 
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+    </script>
+</body>
+</html>
