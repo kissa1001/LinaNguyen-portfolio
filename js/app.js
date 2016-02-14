@@ -21,11 +21,20 @@ $(function() {
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
-        }, 1200, 'swing', function () {
+        }, 1200, 'easeInOutCirc', function () {
             window.location.hash = target;
         });
     });
-
+    //skillset hover
+    $('.skill').hover(function() {
+        $(this).stop().animate({
+            top: -25
+        }, 900, "easeOutBounce");
+    }, function() {
+        $(this).stop().animate({
+            top: 0
+        }, 900, "easeOutBounce");
+    });
     // Projects Buttons
     $(".button-fill").hover(function () {
         $(this).children(".button-inside").addClass('full');
