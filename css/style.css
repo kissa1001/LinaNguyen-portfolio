@@ -765,8 +765,11 @@ h6{
     h3{
     	font-size:1em;
     }
+    .intro{
+      float:none;
+    }
     #background{
-      padding-top:1em;
+      padding-top: 1em;
     }
     #about{
       padding-bottom: 1em;
@@ -788,8 +791,11 @@ h6{
     h3{
       font-size:2em;
     }
+    .intro{
+      float:none;
+    }
     #background{
-      padding-top:1.5em;
+      padding-top:1em;
     }
     #about{
       padding-bottom: 1em;
