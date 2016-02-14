@@ -26,17 +26,6 @@ $(function() {
         });
     });
 
-    //about me toggle
-    $( "#btn-bg" ).click(function() {
-        $("#myskills").hide();
-        $( "#background" ).slideToggle('slow');
-    });
-
-    $( "#btn-skls" ).click(function() {
-        $( "#myskills" ).slideToggle('slow');
-        $("#background").hide();
-    });
-
     // Projects Buttons
     $(".button-fill").hover(function () {
         $(this).children(".button-inside").addClass('full');

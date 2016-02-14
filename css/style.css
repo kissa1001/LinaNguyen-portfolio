@@ -59,6 +59,9 @@ h6{
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.purple{
+  color:#C512DC;
+}
                                                 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -137,9 +140,9 @@ h6{
   z-index: 1000;
   position: fixed;
   right: 0;
-  width: 230px;
+  width: 100vw;
   height: 100%;
-  margin-right: -230px;
+  margin-right: -100vw;
   overflow: hidden;
   background: #222;
   -webkit-transition: all 0.4s ease 0s;
@@ -152,20 +155,31 @@ h6{
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 230px;
+  width: 100vw;
   margin: 0;
+  text-align: center;
   list-style: none;
 }
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
   color: #999;
-	font-size:1.2em;
+	font-size:2em;
 	padding-top: 2em;
+  -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    transition: all 1s ease;
 }
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
+  -webkit-transform:scale(1.25); 
+    -moz-transform:scale(1.25); 
+    -ms-transform:scale(1.25); 
+    -o-transform:scale(1.25); 
+     transform:scale(1.25);
 }
 
 .sidebar-nav li a:active,
@@ -197,13 +211,13 @@ h6{
 }
 #menu-close{
 	position:fixed;
-	top:3.8em;
+	top:1em;
 	right:1em;
 	color:#fff;
 }
 #sidebar-wrapper.active {
-  right: 230px;
-  width: 230px;
+  right: 100vw;
+  width: 100vw;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -319,6 +333,7 @@ h6{
                                           /***About section styling***/
 .about {
   padding-top: 4em;
+  padding-left: 2em;
   background:url("../img/about-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -328,86 +343,29 @@ h6{
 .intro{
 	float:right;
 	background:#F2F2F2;
-	padding:8em 2em;
+  margin-top: 2em;
+	padding:3em 1em;
 	text-align: center;
 }
-.btn-arrow-right {
-  text-transform: uppercase;
-  font-size:1em;
-  padding:1em 1em;
-  border-radius: 0.5em;
-  margin-left:2em;
-  background:#37D4AA;
-  color:#fff;
-  border:none;
-}
-
-.btn-arrow-right:hover, .button:active {
-  text-decoration: none;
-  color: #37D4AA;
-  background: #FFF;
-  cursor:pointer;
-}
-
-.btn-arrow-right span {
-  display: inline-block;
-  position: relative;
-  padding-right: 0;
-  transition: padding-right 0.5s;
-}
-
-.btn-arrow-right span:after {
-  content: ' ';  
-  position: absolute;
-  top: 0;
-  right: -18px;
-  opacity: 0;
-  width: 8px;
-  height: 8px;
-  margin-top: -4px;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid  #37D4AA;
-  border-top: none;
-  border-right: none;
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  transform: rotate(-135deg);
-}
-.btn-arrow-right:hover span, .button:active span 
-{
-  padding-right: 30px;
-}
-
-.btn-arrow-right:hover span:after, .button:active span:after 
-{
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  opacity: 1;
-  right: 0;
-  top: 50%;
-}
 #background{
-  display:none;
-	background:#ECCEF5;
-	padding:3em 3em;
 	max-width: 36em;
 }
 #background > p{
-	font-size: 1.1em;
+	font-size: 1.3em;
 }
-#myskills{
-	display:none;
-	background:#ECCEF5;
-  padding:1em 1em;
-	max-width: 36em;
+.skillset{
+  margin-left: 19em;
+  padding-top: 1em;
 }
-#skills{
-  text-align: center;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+.skillset > div:hover{
+  opacity:0.7;
+  transition: 0.3s ease;
 }
-#skills {
-  border-collapse: collapse;
-}
-#skills td, #skills th {
-  border: solid 1px #fff;
+.skillset > div {
+  padding:0 0;
+  margin:0 0;
+  display:inline-block;
+  cursor:pointer;
 }
 .title{
   border-bottom: 1px dashed #fff;
