@@ -765,6 +765,15 @@ h6{
     h3{
     	font-size:1em;
     }
+    #background{
+      margin-top:1em;
+    }
+    #about{
+      padding-bottom: 1em;
+    }
+    #contactForm{
+      margin-left: 1em;
+    }
 }
 @media only screen (max-width: 768px) {
     h1{
@@ -779,8 +788,17 @@ h6{
     h3{
       font-size:2em;
     }
+    #background{
+      margin-top:1em;
+    }
+    #about{
+      padding-bottom: 1em;
+    }
     #background > p{
       font-size:1.7em;
+    }
+    #contactForm{
+      margin-left: 1em;
     }
     #footer p{
       font-size:1.5em;
