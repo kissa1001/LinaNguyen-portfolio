@@ -276,7 +276,7 @@ h6{
   40% {transform: translateY(-30px);}
   60% {transform: translateY(-15px);}
 } 
-.arrow .btn:hover i {
+.arrow, .social li:hover i {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
