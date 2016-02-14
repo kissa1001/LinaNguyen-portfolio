@@ -33,13 +33,11 @@ h4{
 	font-size:1.3em;
 	color:#fff;
 	font-family: "Fanwood Text";
-	font-weight: 400;
 }
 h5{
   font-family: "Fanwood Text";
 	font-size: 1.3em;
-	font-weight: 400;
-	font-style: italic;
+	font-weight: 200;
 	color:#fff;
 	letter-spacing: 0.1em;
 }
@@ -661,13 +659,7 @@ h6{
 	padding-left: 2em;
 	padding-top:3em;
 }
-#aside span{
-	text-align:center;
-	text-transform: uppercase;
-	font-style: normal;
-	font-weight: 400;
-	font-family: 'Quattrocento', Georgia, serif;
-}
+
                                             /***Contact styling***/
 #contact{
 	background:#fff;
