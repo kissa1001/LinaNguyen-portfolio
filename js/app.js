@@ -28,7 +28,7 @@ $(function() {
     //skillset hover
     $('.skill').hover(function() {
         $(this).stop().animate({
-            top: -25
+            top: -21
         }, 900, "easeOutBounce");
     }, function() {
         $(this).stop().animate({
