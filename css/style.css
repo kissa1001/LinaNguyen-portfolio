@@ -784,3 +784,37 @@ body p{
   color:#C512DB;
   padding-right: 1.5em;
 }
+
+@media only screen and (max-width: 500px) {
+    h1{
+      font-size:3em;
+    }
+    h2{
+      font-size:1.5em;
+    }
+    h3{
+      font-size:1em;
+    }
+
+
+}
+@media only screen (max-width: 768px) {
+    h1{
+      font-size:5em;
+    }
+    .name > p{
+      font-size:2em;
+    }
+    h2{
+      font-size:3em;
+    }
+    h3{
+      font-size:2em;
+    }
+    #background > p{
+      font-size:1.7em;
+    }
+    #footer p{
+      font-size:1.5em;
+    }
+}
