@@ -1,5 +1,13 @@
+//Loader
+    // makes sure the whole site is loaded
+    $(window).load(function() {
+        // will first fade out the loading animation
+    $(".loader").fadeOut(3000);
+        // will fade out the whole DIV that covers the website.
+    $("#preloader").delay(2000).fadeOut("slow");
+    })
 $(function() {
-
+    
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
