@@ -416,10 +416,6 @@ body p{
                                           /***About section styling***/
 .about {
   padding-top: 4em;
-  background:url("../img/about-bg.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height:45em ;
 }
 
