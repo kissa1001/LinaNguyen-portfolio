@@ -420,7 +420,7 @@ body p{
 }
 
 .intro{
-	background:#F2F2F2;
+  background:#F2F2F2;
   padding-top:3em;
   padding-bottom:3em;
   border:1px dashed #C512DC;
@@ -437,7 +437,6 @@ body p{
   padding:0 0;
   margin:0 0;
   display:inline-block;
-  cursor:pointer;
   width:100px;
   height:100px;
 }
@@ -460,8 +459,8 @@ body p{
 .projects {
   padding-top:2em;
   padding-bottom: 10em;
-	background-color:#000;
-	margin-bottom: 2em;
+  background-color:#000;
+  margin-bottom: 2em;
   z-index:0;
 }
 
