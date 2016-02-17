@@ -293,9 +293,9 @@ body p{
   cursor:pointer;
 }
 #menu-close{
-	position:fixed;
-	top:1em;
-	right:1em;
+	float:right;
+  margin-top:1em;
+  margin-right: 1em;
 	color:#fff;
 }
 #sidebar-wrapper.active {
