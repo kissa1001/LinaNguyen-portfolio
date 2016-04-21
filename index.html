@@ -5,16 +5,16 @@
 	<title>Lina Nguyen</title>
 	<link rel="shortcut icon" href="img/logo.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700|Fanwood+Text|Satisfy|Poiret+One|Niconne' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fanwood+Text|Satisfy' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <!-- Navigation -->
     <a id="menu-toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
     <nav id="sidebar-wrapper">
-       <ul class="sidebar-nav">
+     <ul class="sidebar-nav">
         <a id="menu-close" href="#"><i class="fa fa-times fa-2x"></i></a>
         <li class="sidebar">
             <a href="#header"  onclick = $("#menu-close").click(); >Lina Nguyen</a>
@@ -32,47 +32,77 @@
 </nav>
 <!-- Header -->
 <header id="header" class="header">
-   <div class="section" id="section">
-      <video autoplay loop muted id="myVideo">
-         <source src="img/video.mp4" type="video/mp4">
-             <source src="img/video.webm" type="video/webm">
-                <source src="img/video.ogv" type="video/ogv">
-                </video>
-                <div class="layer">
-                 <div class="name">
-                    <span class = "hello animation-element slide-left">Hello, I'm Lina Nguyen</span>
-                    <h1 class="animation-element bounce-up">I'm a <span class='cursive'>front-end web developer</span> <br>from Charlotte, NC</h1>
-                    <p class="animation-element slide-left">I'm a FEWD career path student from Thinkful. I love the logic and structure of coding and passionate about clean and efficient code.</p>
-                    <blockquote class="quote animation-element bounce-up"><p>Passion for code-why I chose to be a programmer!</p>
-                    </blockquote>
-                </div>
-            </div>
+ <div class="section" id="section">
+  <video autoplay loop muted id="myVideo">
+   <source src="img/video.mp4" type="video/mp4">
+       <source src="img/video.webm" type="video/webm">
+        <source src="img/video.ogv" type="video/ogv">
+        </video>
+        <div class="layer">
+           <div class="name animation-element slide-left">
+            <span class = "hello">Hello, I'm Lina Nguyen</span>
+            <h1>I'm a <span class='cursive'>front-end web developer</span> <br>from Charlotte, NC</h1>
         </div>
-        <div class="arrow">
-          <a href="#about" class="btn">
-            <i class="fa fa-angle-down fa-3x"></i>
-        </a>
     </div>
+</div>
+<div class="arrow">
+  <a href="#about" class="btn">
+    <i class="fa fa-angle-down fa-3x"></i>
+</a>
+</div>
 </header>
 <!-- About -->
 <section id="about" class="about">
-    <div class="box backend">
-        <h3 class="animation-element slide-left">Node.js</h3>
-        <h3 class="animation-element slide-left">Express</h3>
-        <h3 class="animation-element slide-left">MongoDB</h3>
-        <h3 class="animation-element bounce-up">Unit Testing:</h3><span class='cursive'>Jasmine, Karma, Mocha, Chai</span>
-        <h2>Backend</h2>
+    <div class="box skills">
+        <div class="skillset row-1">
+            <div class="skill HTML" style="background-color:#404040;padding-top:20px;padding-right:19px;">
+                <img src="img/html.png" alt="html" style="width:60px;height:60px;">
+            </div>
+        </div>
+        <div class="skillset row-2">
+            <div class="skill CSS" style="background-color:#6DBDD6;padding-top:20px;padding-right:25px;">
+                <img src="img/css.png" alt="css" style="width:45px;height:60px;">
+            </div>
+            <div class="skill Javascript" style="background-color:#B71427;padding-top:20px;padding-right:25px;">
+                <img src="img/js.png" alt="js" style="width:50px;height:60px;">
+            </div>
+        </div>
+        <div class="skillset row-3">
+            <div class="skill Angular" style="background-color:#118C4E;padding-top:20px;padding-right:20px;">
+                <img src="img/angular.png" alt="angular" style="width:60px;height:60px;">
+            </div>
+            <div class="skill CSS Frameworks" style="background:#FFE658;padding-top:20px;padding-right:15px;">
+                <img src="img/bootstrap.png" alt="bootstrap" style="width:70px;height:60px;">
+            </div>
+            <div class="skill jQuery" style="background-color:#E44424;padding-top:20px;padding-right:20px;">
+                <img src="img/jquery.png" alt="jquery" style="width:60px;height:60px;">
+            </div>
+        </div>
+        <div class="skillset row-4">
+            <div class="skill Gulp" style="background-color:#FFBF00;padding-top:20px;">
+                <img src="img/gulp_sass.png" alt="gulp" style="width:100px;height:60px;">
+            </div>
+            <div class="skill NPM+Bower" style="background-color:#06B2A5;padding-top:20px;">
+                <img src="img/bower_npm.png" alt="bower_npm" style="width:100px;height:60px;">
+            </div>
+            <div class="skill MongoDB" style="background-color:#B24498;padding-top:20px;">
+                <img src="img/mongo.png" alt="mongoDB" style="width:100px;height:60px;">
+            </div>
+            <div class="skill Node" style="background-color:#B27A00;padding-top:20px;">
+                <img src="img/node_express.png" alt="node" style="width:100px;height:60px;">
+            </div>
+        </div>
+        <h2>Skills</h2>
     </div>
     <div class="slider">
-        <div class="box frontend">
-            <h2 class="animation-element slide-left">Frontend</h2>
-            <h3 class="animation-element bounce-up">HTML</h3>
-            <h3 class="animation-element bounce-up">CSS</h3>
-            <h3 class="animation-element bounce-up">JavaScript</h3>
-            <h3 class="animation-element bounce-up">jQuery</h3>
-            <h3 class="animation-element bounce-up">Angular.js</h3>
-            <h3 class="animation-element bounce-up">CSS tools:</h3><span class='cursive'>SASS, Bootstrap</span>
-            <h3>Build tools:</h3><span class='cursive'>Bower, Gulp</span>
+        <div class="box background">
+            <h2>Who I am..</h2>
+            <hr class='small1'>
+            <p>My name is <strong>Lina</strong> (vietnamese:Thu Linh Nguyen), and I love to <strong>code</strong>, alongside I'm into travelling, discovering new places and taking good photos.</p>
+            <br>
+            <p>After second course of university in Ukraine, in 2015 I decided to move to US, it's a big opportunity for me to become independent from parents, so to start a new life I decided to take a <strong>Web Development</strong> course at Thinkful. Now after graduation I'm excited to put my skills to use and also develop them.</p>
+            <br>
+            <p>I'm a fast learner with extremely high passion for code, so check out my projects and let's get in <strong>touch!</strong> </p>
         </div>
     </div>
 </section>
@@ -87,22 +117,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>Quit Smoke</h4>
-            <p><span>Responsive Bootstrap Webpage</span>
-              <br>Skills used:Twitter Bootstrap, HTML, CSS<br></p>
-              <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:Twitter Bootstrap, HTML, CSS</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>
     <dl class="direction-aware-hover bg-2 animation-element bounce-up">
@@ -112,23 +135,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>Quizz App</h4>
-            <p><span>mini-quizz game</span>
-                <br>Skills used:HTML,CSS,jQuery,javaScript<br>
-            </p>
-            <a href="http://kissa1001.github.io/QuizzApp/" target="_blank">
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/QuizzApp/tree/master" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:HTML,CSS,jQuery,javaScript</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>
     <dl class="direction-aware-hover bg-3 animation-element bounce-up">
@@ -138,23 +153,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>API hack</h4>
-            <p><span>App that shows instagram pics by weather condition locations</span>
-                <br>Skills used:HTML,CSS,javaScript,jQuery<br>
-            </p>
-            <a href="http://kissa1001.github.io/InstaWeather" target="_blank">
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/InstaWeather" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:HTML,CSS,javaScript,jQuery</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>
     <dl class="direction-aware-hover bg-4 animation-element bounce-up">
@@ -164,23 +171,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>Shopping list App</h4>
-            <p><span>jquery shopping list</span>
-                <br>Skills used:HTML,CSS,jQuery<br>
-            </p>
-            <a href="http://kissa1001.github.io/Shopping-list/" target="_blank">
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/Shopping-list/tree/gh-pages" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:HTML,CSS,jQuery</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>
     <dl class="direction-aware-hover bg-5 animation-element bounce-up">
@@ -190,23 +189,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>Street Fighter</h4>
-            <p><span>jQuery mini-game</span>
-                <br>Skills used:HTML,CSS,jQuery<br>
-            </p>
-            <a href="http://kissa1001.github.io/jquery-streetfighter/" target="_blank" >
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/jquery-streetfighter" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:HTML,CSS,jQuery</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>
     <dl class="direction-aware-hover bg-6 animation-element bounce-up">
@@ -216,23 +207,15 @@
         <dt class="direction-aware-hover__bottom"></dt>
         <dd class="direction-aware-hover__content">
             <h4>Hot or Cold</h4>
-            <p><span>Hot || Cold Game</span>
-                <br>Skills used:jQuery<br>
-            </p>
-            <a href="http://kissa1001.github.io/hot-or-cold/" target="_blank">
-                <div class="button-fill green">
-                    <div class="button-text">View Page</div>
-                    <div class="button-inside">
-                        <div class="inside-text">View Page</div>
-                    </div>
-                </div></a><a href="https://github.com/kissa1001/hot-or-cold/tree/master" target="_blank">
-                <div class="button-fill grey">
-                    <div class="button-text"><i class="fa fa-github-alt fa-2x "></i></div>
-                    <div class="button-inside">
-                        <div class="inside-text"><i class="fa fa-github-alt fa-2x" ></i></div>
-                    </div>
-                </div>
-            </a>
+            <p>Skills used:jQuery</p>
+            <div class="links">
+                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                    <i class="fa fa-github-alt fa-3x "></i>
+                </a>
+            </div>
         </dd>
     </dl>            
 </section>
@@ -244,17 +227,17 @@
         <div class="grid animation-element bounce-up row">
             <div class="col-sm-offset-1 col-sm-3">
                 <h4><span class="fa fa-map-marker"></span> Charlotte, US</h4>
-                <h4><span class="fa fa-phone"></span> +1 (704)477-9941</h4>
+                <h4><span class="fa fa-phone"></span> +1 (980)244-1240</h4>
                 <h4><span class="fa fa-envelope"></span> kissa101295@gmail.com</h4>
             </div>
             <div class="col-sm-offset-2 col-sm-6">
                 <form id="contactForm" action="form-process.php" method="POST" name="contactform" data-toggle="validator" class="contactForm">
-                    <input type="text" class="form-control" name="name" id="name" style="border-color:#37D4AA;" placeholder="Your name" required data-error="NEW ERROR MESSAGE">
+                    <input type="text" class="form-control" name="name" id="name" style="border-color:#C512DC;" placeholder="Your name" required data-error="NEW ERROR MESSAGE">
                     <div class="help-block with-errors"></div>
-                    <input type="email" class="form-control" name="email" id="email" style="border-color:#37D4AA;" placeholder="Your email" required>
+                    <input type="email" class="form-control" name="email" id="email" style="border-color:#C512DC;" placeholder="Your email" required>
                     <div class="help-block with-errors"></div>
                     <div class="form-group">
-                        <textarea id="message" name="message" class="form-control" style="border-color:#37D4AA;" rows="5" placeholder="Enter your message" required></textarea>
+                        <textarea id="message" name="message" class="form-control" style="border-color:#C512DC;" rows="5" placeholder="Enter your message" required></textarea>
                         <div class="help-block with-errors"></div>
                         <button type="submit" id="form-submit" class="btn-submit pull-right">Submit</button>
                         <div class="clearfix"></div>
@@ -263,29 +246,36 @@
             </div>
         </section>
         <!-- Footer -->
-        <footer id="footer">
-           <p>Connect with me via</p>
-           <ul class="social">
-            <li><a class="icons social-facebook" href="https://www.facebook.com/linka.nguyen.5" target="_blank">
-              <i class="fa fa-facebook"></i>
-          </a></li>
-          <li><a class="icons social-googleplus" href="https://plus.google.com/u/0/118163322112547006876/posts" target="_blank">
-              <i class="fa fa-google-plus"></i>
-          </a></li>
-          <li><a class="icons social-git" href="https://github.com/kissa1001" target="_blank">
-              <i class="fa fa-github-alt"></i>
-          </a></li>
-          <li><a class="icons social-linkedIn" href="https://www.linkedin.com/in/thu-linh-nguyen-6a7876108?trk=nav_responsive_tab_profile" target="_blank">
-              <i class="fa fa-linkedin-square"></i></i>
-          </a></li>
-      </ul>
-  </footer>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/jquery-2.1.4.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
-</html>
+        <footer>
+            <ul class="social">
+                <li>
+                    <a class="icons social-facebook" href="https://www.facebook.com/linka.nguyen.5" target="_blank">
+                        <i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icons social-googleplus" href="https://plus.google.com/u/0/118163322112547006876/posts" target="_blank">
+                        <i class="fa fa-3x fa-google-plus-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icons social-git" href="https://github.com/kissa1001" target="_blank">
+                        <i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="icons social-linkedIn" href="https://www.linkedin.com/in/thu-linh-nguyen-6a7876108?trk=nav_responsive_tab_profile" target="_blank">
+                        <i class="fa fa-3x fa-linkedin-square"></i></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+    </html>

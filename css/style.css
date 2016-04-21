@@ -25,9 +25,8 @@ body h1{
 }
 body h2{
 	font-size:2em;
-	letter-spacing:0.2em;
-	font-family: 'Quattrocento', Georgia, serif;
-	text-transform: uppercase;
+	letter-spacing:0.1em;
+	font-family: "Fanwood Text";
 }
 body h3{
   font-family: "Fanwood Text";
@@ -40,19 +39,6 @@ body h4{
 	font-size:1.3em;
 	color:#fff;
 	font-family: "Fanwood Text";
-}
-body h5{
-  font-family: "Fanwood Text";
-	font-size: 1.3em;
-	font-weight: 200;
-	color:#fff;
-	letter-spacing: 0.1em;
-}
-body h6{
-  font-family:'Quattrocento';
-  font-size:1.2em;
-  font-weight:400;
-  letter-spacing: 0.2em;
 }
 body p{
   font-family:'Quattrocento';
@@ -267,27 +253,6 @@ body p{
   color:#C512DC;
 }
 
-.arrow .btn i {
-	-webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
-  40% {-webkit-transform: translateY(-30px);}
-  60% {-webkit-transform: translateY(-15px);}
-} 
- 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  40% {transform: translateY(-30px);}
-  60% {transform: translateY(-15px);}
-} 
 .arrow, .social li:hover i {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -337,19 +302,6 @@ body p{
 	word-wrap: break-word;
   max-width: 600px;
 }
-.name > p{
-	color:#fff;
-  font-family: 'Poiret One', cursive;
-  font-size: 1.5em;
-}
-.quote{
-  margin-left: 2em;
-}
-.quote > p{
-  font-family: 'Niconne', cursive;
-  font-size:1.5em;  
-  color:#fff;
-}
                                           /***About section styling***/
 .about {
   min-height:47em;
@@ -375,40 +327,47 @@ body p{
   padding:2em 3em;
 } 
 .box h2{
-  font-family: 'Quattrocento', serif;
-  font-weight: 700;
   letter-spacing: 0.2;
   font-size:4em;
 }
-.box span{
-  font-size: 2em;
-}
-.frontend {
+.background {
   transform: skewX(20deg);
   -moz-transform: skewX(20deg);
   -ms-transform: skewX(20deg);
   -webkit-transform: skewX(20deg);
   background: #FAFAFA;
   color:#000;
-  margin-left: 9em; 
+  margin-left: 9em;
+  padding-right: 30%; 
   pointer-events: auto; 
   text-align: left;
 }
-    
-.backend {
+.background p{
+  font-size: 1.2em;
+}
+.skills {
   min-height: 47em;
-  background: #A4A4A4;
+  background: #111;
   position: absolute;  
   color:#fff;
   text-align: right;
-  padding-top: 15em;
+  padding-top: 4em;
+}
+
+.skillset > div {
+  position:relative;
+  padding:0 0;
+  margin:0 0;
+  display:inline-block;
+  width:100px;
+  height:100px;
 }
 
 .slider:hover {
   width: 70%;
 }
     
-.backend:hover + .slider { 
+.skills:hover + .slider { 
    width: 50%;
 }
 
@@ -423,13 +382,13 @@ body p{
   content: "";
   left: 0;
   margin-top: 20em;
-  background: #000;
+  background: #111;
   position: absolute;
 }
 .projects {
   padding-top:2em;
   padding-bottom: 10em;
-	background-color:#000;
+	background-color:#111;
 	margin-bottom: 2em;
   z-index:0;
 }
@@ -443,6 +402,7 @@ body p{
 }
 .projects h2{
 	color:#fff;
+  text-transform: uppercase;
 }
 .direction-aware-hover {
   background: #CEF6F5;
@@ -591,89 +551,30 @@ body p{
 }
 .projects h4{
 	margin-top: 0;
-  background: #0C8766;
-  padding:0.5em 1em;
+  background: #C512DC;
+  padding:1.1em 1em;
   border-bottom-style:double;
   border-color:#fff;
 }
-.projects span{
-	text-shadow: 0px 1px 1px #4d4d4d;
-	font-style:italic;
-	line-height:1em;
+.links{
+  position: absolute;
+  bottom:1em;
+  left:30%;
 }
 .projects p{
-	font-weight:400;
 	font-size:1.2em;
 	color:#000;
 }
 .projects a{
   text-decoration: none;
+  padding-right: 1.5em;
+}
+.projects a:hover{
+  text-decoration: none;
+  color:#C512DC;
 }
 .projects {
 	text-align: center;
-}
-.button-fill {
-  text-align: center;
-  background: #ccc;
-  display: inline-block;
-  position: relative;
-  text-transform: uppercase;
-}
-.button-fill.grey {
-  background: #445561;
-  color: white;
-}
-.button-fill.green {
-  background: #0C8766;
-  color: #fff;
-}
-.button-fill.green .button-inside {
-  color: #0C8766;
-}
-.button-fill.green .button-inside.full {
-  border: 1px solid #0C8766;
-}
-.button-text {
-  padding: 0 0.4em;
-  line-height: 2.5em;
-  letter-spacing: 0.1em;
-  font-size: 0.7em;
-}
-.button-inside {
-  font-size: 0.7em;
-  width: 0px;
-  height: 2.5em;
-  margin: 0;
-  float: left;
-  position: absolute;
-  top: 1px;
-  left: 50%;
-  line-height: 2.5em;
-  color: #445561;
-  background: #fff;
-  text-align: center;
-  overflow: hidden;
-  -webkit-transition: width 0.5s, left 0.5s, margin 0.5s;
-  -moz-transition: width 0.5s, left 0.5s, margin 0.5s;
-  -o-transition: width 0.5s, left 0.5s, margin 0.5s;
-  transition: width 0.5s, left 0.5s, margin 0.5s;
-}
-.button-inside.full {
-  width: 100%;
-  left: 0%;
-  top: 0;
-  border: 1px solid #445561;
-}
-.inside-text {
-  text-align: center;
-  position: absolute;
-  right: 50%;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
 }
 
                                             /***Contact styling***/
@@ -681,18 +582,21 @@ body p{
   padding-top: 7em;
 	background:#fff;
 }
+#contact h2{
+  text-transform: uppercase;
+}
 #contact h4 {
 	color:#000;
+  font-size: 1.5em;
 }
 .btn-submit{
   cursor:pointer; 
   width: 130px;
   height: 40px;
-  border:1px solid #1ABC9C;
+  border:1px solid #C512DC;
   background-color: #fff;
   font-size: 16px;
-  color:#1ABC9C;
-  text-transform: uppercase;
+  color:#C512DC;
   margin-top: 10px;
   margin-right: 30px;
   outline: none;
@@ -704,7 +608,7 @@ body p{
 }
 
 .btn-submit:hover{
-  background-color: #16A085;
+  background-color: #C512DC;
   border:none;
   color:white;
   -webkit-transition: 1s;
@@ -728,16 +632,12 @@ body p{
 	border:1px solid;
 }
                                           /***Footer styling***/
-#footer{
-  background:#000;
+footer{
+  background:#111;
   text-align:center;
-  padding:2em 0;
+  padding:2.5em 0;
   margin-top:4em;
   z-index:2;
-}
-#footer > p{
-  font-size:1.2em;
-  color:#C512DB;
 }
 .social{
 	padding: 0;
@@ -745,9 +645,12 @@ body p{
 .social > li{
   display:inline-block;
 }
-#footer a{
+footer a{
   color:#C512DB;
-  padding-right: 1.5em;
+  padding-right: 0.5em;
+}
+footer a:hover{
+  color:#C512DB;
 }
 
 @media only screen and (max-width: 500px) {
@@ -787,9 +690,6 @@ body p{
     }
     .name{
       max-width: 500px;
-    }
-    .name > p{
-      font-size:1.5em;
     }
     .box h2{
       font-size: 1.2em;
