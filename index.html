@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Fanwood+Text|Satisfy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fanwood+Text|Satisfy|Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <!-- Navigation -->
@@ -20,7 +20,7 @@
             <a href="#header"  onclick = $("#menu-close").click(); >Lina Nguyen</a>
         </li>
         <li>
-            <a href="#about" onclick = $("#menu-close").click(); >Skills</a>
+            <a href="#about" onclick = $("#menu-close").click(); >About</a>
         </li>
         <li>
             <a href="#projects" onclick = $("#menu-close").click(); >Projects</a>
@@ -40,8 +40,8 @@
         </video>
         <div class="layer">
            <div class="name animation-element slide-left">
-            <span class = "hello">Hello, I'm Lina Nguyen</span>
-            <h1>I'm a <span class='cursive'>front-end web developer</span> <br>from Charlotte, NC</h1>
+            <span class = "hello-intro">Hello, I'm Lina Nguyen</span>
+            <h1>I'm a <span class='cursive-intro'>front-end web developer</span> <br>from Charlotte, NC</h1>
         </div>
     </div>
 </div>
@@ -97,181 +97,146 @@
     <div class="slider">
         <div class="box background">
             <h2>Who I am..</h2>
-            <hr class='small1'>
-            <p>My name is <strong>Lina</strong> (vietnamese:Thu Linh Nguyen), and I love to <strong>code</strong>, alongside I'm into travelling, discovering new places and taking good photos.</p>
-            <br>
-            <p>After second course of university in Ukraine, in 2015 I decided to move to US, it's a big opportunity for me to become independent from parents, so to start a new life I decided to take a <strong>Web Development</strong> course at Thinkful. Now after graduation I'm excited to put my skills to use and also develop them.</p>
-            <br>
-            <p>I'm a fast learner with extremely high passion for code, so check out my projects and let's get in <strong>touch!</strong> </p>
+            <hr class='hr-small1'>
+            <div class="about-brief">
+                <p>My name is <strong>Lina</strong> (vietnamese:Thu Linh Nguyen), and I love to <strong>code</strong>, alongside I'm into travelling, discovering new places and taking good photos.</p>
+                <br>
+                <p>After second course of university in Ukraine, in 2015 I decided to move to US, it's a big opportunity for me to become independent from parents, so to start a new life I decided to take a <strong>Web Development</strong> course at Thinkful. Now after graduation I'm excited to put my skills to use and also develop them.</p>
+                <br>
+                <p>I'm a fast learner with extremely high passion for code, so check out my projects and let's get in <strong>touch!</strong> </p>
+            </div>
         </div>
     </div>
 </section>
 <!-- Projects -->
 <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <hr class="small">
-    <dl class="direction-aware-hover bg-1 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>Quit Smoke</h4>
-            <p>Skills used:Twitter Bootstrap, HTML, CSS</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
+    <h2 class='text-center'>Projects</h2>
+    <hr class="hr-small">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <div class="row">
+                    <div class="col-sm-8 project-thumb">
+                        <img class="img-responsive" src="img/bg-2.png" alt="project1">
+                    </div>
+                    <div class="col-sm-4 project-desc animation-element slide-left">
+                        <h4 class='project-name text-center'>Quit Smoke</h4>
+                        <div class="project-brief">
+                            <p>Skills used:Twitter Bootstrap, HTML, CSS</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                                <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                                <i class="fa fa-github-alt fa-3x "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </dd>
-    </dl>
-    <dl class="direction-aware-hover bg-2 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>Quizz App</h4>
-            <p>Skills used:HTML,CSS,jQuery,javaScript</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-8 project-thumb">
+                        <img class="img-responsive" src="img/bg-2.png" alt="project1">
+                    </div>
+                    <div class="col-sm-4 project-desc animation-element slide-left">
+                        <h4 class='project-name text-center'>Quit Smoke</h4>
+                        <div class="project-brief">
+                            <p>Skills used:Twitter Bootstrap, HTML, CSS</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                                <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                                <i class="fa fa-github-alt fa-3x "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </dd>
-    </dl>
-    <dl class="direction-aware-hover bg-3 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>API hack</h4>
-            <p>Skills used:HTML,CSS,javaScript,jQuery</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-8 project-thumb">
+                        <img class="img-responsive" src="img/bg-2.png" alt="project1">
+                    </div>
+                    <div class="col-sm-4 project-desc animation-element slide-left">
+                        <h4 class='project-name text-center'>Quit Smoke</h4>
+                        <div class="project-brief">
+                            <p>Skills used:Twitter Bootstrap, HTML, CSS</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
+                                <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
+                                <i class="fa fa-github-alt fa-3x "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </dd>
-    </dl>
-    <dl class="direction-aware-hover bg-4 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>Shopping list App</h4>
-            <p>Skills used:HTML,CSS,jQuery</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
-            </div>
-        </dd>
-    </dl>
-    <dl class="direction-aware-hover bg-5 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>Street Fighter</h4>
-            <p>Skills used:HTML,CSS,jQuery</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
-            </div>
-        </dd>
-    </dl>
-    <dl class="direction-aware-hover bg-6 animation-element bounce-up">
-        <dt class="direction-aware-hover__left"></dt>
-        <dt class="direction-aware-hover__right"></dt>
-        <dt class="direction-aware-hover__top"></dt>
-        <dt class="direction-aware-hover__bottom"></dt>
-        <dd class="direction-aware-hover__content">
-            <h4>Hot or Cold</h4>
-            <p>Skills used:jQuery</p>
-            <div class="links">
-                <a href="http://kissa1001.github.io/Smoke-Free/" target="_blank">
-                    <i class="fa fa-chrome fa-3x" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/kissa1001/Smoke-Free" target="_blank">
-                    <i class="fa fa-github-alt fa-3x "></i>
-                </a>
-            </div>
-        </dd>
-    </dl>            
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+    </div>          
 </section>
 <!-- Contact -->
 <section id="contact" class="contact">
     <div class="container">
-        <h2 class="text-center">Drop me a line!</h2>
-        <hr class="small1">
-        <div class="grid animation-element bounce-up row">
-            <div class="col-sm-offset-1 col-sm-3">
-                <h4><span class="fa fa-map-marker"></span> Charlotte, US</h4>
-                <h4><span class="fa fa-phone"></span> +1 (980)244-1240</h4>
-                <h4><span class="fa fa-envelope"></span> kissa101295@gmail.com</h4>
-            </div>
-            <div class="col-sm-offset-2 col-sm-6">
+        <h2 class="text-center">Let's connect!</h2>
+        <hr class="hr-small1">
+        <div class="animation-element bounce-up contact-form">
                 <form id="contactForm" action="form-process.php" method="POST" name="contactform" data-toggle="validator" class="contactForm">
-                    <input type="text" class="form-control" name="name" id="name" style="border-color:#C512DC;" placeholder="Your name" required data-error="NEW ERROR MESSAGE">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" name="name" id="name"  placeholder="Your name" required data-error="NEW ERROR MESSAGE">
+                    </div>
                     <div class="help-block with-errors"></div>
-                    <input type="email" class="form-control" name="email" id="email" style="border-color:#C512DC;" placeholder="Your email" required>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
+                    </div>
                     <div class="help-block with-errors"></div>
                     <div class="form-group">
-                        <textarea id="message" name="message" class="form-control" style="border-color:#C512DC;" rows="5" placeholder="Enter your message" required></textarea>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your message" required>
+                        </div>
                         <div class="help-block with-errors"></div>
                         <button type="submit" id="form-submit" class="btn-submit pull-right">Submit</button>
                         <div class="clearfix"></div>
                     </form>
                 </div>
+                <div class="social-icons">
+                    <div class="hr">
+                        <div></div>
+                        <div>OR</div>
+                        <div></div>
+                    </div>
+                    <div class="socials">
+                        <li class="email-sb sb"><a title="Email" href="mailto:kissa101295@gmail.com?Subject=Portfolio"><i class="fa fa-envelope-o"></i></a></li>
+                        <li class="fb-sb sb"><a title="Facebook" href="https://www.facebook.com/linka.nguyen.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li class="gplus-sb sb"><a title="Google+" href="https://plus.google.com/u/0/118163322112547006876/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="github-sb sb"><a title="Github" href="https://github.com/kissa1001"><i class="fa fa-github" target="_blank"></i></a></li>
+                        <li class="linkedin-sb sb"><a title="LinkedIn" href="https://www.linkedin.com/in/thu-linh-nguyen-6a7876108?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Footer -->
         <footer>
-            <ul class="social">
-                <li>
-                    <a class="icons social-facebook" href="https://www.facebook.com/linka.nguyen.5" target="_blank">
-                        <i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="icons social-googleplus" href="https://plus.google.com/u/0/118163322112547006876/posts" target="_blank">
-                        <i class="fa fa-3x fa-google-plus-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="icons social-git" href="https://github.com/kissa1001" target="_blank">
-                        <i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="icons social-linkedIn" href="https://www.linkedin.com/in/thu-linh-nguyen-6a7876108?trk=nav_responsive_tab_profile" target="_blank">
-                        <i class="fa fa-3x fa-linkedin-square"></i></i>
-                    </a>
-                </li>
-            </ul>
+            <p class='footer-text text-center'>Made with love by Kissa <i class="fa fa-heart" aria-hidden="true"></i></p>
         </footer>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="js/jquery-2.1.4.js"></script>
