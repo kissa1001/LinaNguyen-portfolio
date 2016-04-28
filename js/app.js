@@ -12,7 +12,6 @@ $(function() {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-    
     // Smooth scroll
 
     $('a[href^="#"]').on('click',function (e) {
@@ -36,12 +35,7 @@ $(function() {
             top: 0
         }, 900, "easeOutBounce");
     });
-    // Projects Buttons
-    $(".button-fill").hover(function () {
-        $(this).children(".button-inside").addClass('full');
-    }, function() {
-        $(this).children(".button-inside").removeClass('full');
-    });
+    
     //animation 
     var $animation_elements = $('.animation-element');
     var $window = $(window);
