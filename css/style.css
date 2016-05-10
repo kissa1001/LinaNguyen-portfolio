@@ -396,7 +396,12 @@ body p{
   color:#fff;
   text-transform: uppercase;
 }
-
+.project-img{
+  height:100%;
+}
+.project-brief p{
+  font-size: 0.95em;
+}
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
