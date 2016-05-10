@@ -14,7 +14,7 @@ $(function() {
     });
     // Smooth scroll
 
-    $('a[href^="#"]').on('click',function (e) {
+    $('.navpoint').on('click',function (e) {
         e.preventDefault();
         var target = this.hash,
         $target = $(target);
