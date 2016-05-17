@@ -692,6 +692,9 @@ footer{
     .about{
       display:none;
     }
+    .background{
+      width:100%;
+    }
     body h2{
       font-size:1.8em;
     }
