@@ -8,7 +8,7 @@ body{
   box-sizing: border-box;
 }
 
-                                            /***General styling***/
+/***General styling***/
 .hello-intro{
   text-transform: uppercase;
   color:#fff;
@@ -19,8 +19,8 @@ body{
 }
 body h1{
   font-family: "Fanwood Text";
-	color:#fff;
-	font-size: 4em;
+  color:#fff;
+  font-size: 4em;
   font-weight: normal;
 }
 body h2{
@@ -30,8 +30,8 @@ body h2{
 }
 body h3{
   font-family: "Fanwood Text";
-	font-size:2.5em;
-	text-transform: uppercase;
+  font-size:2.5em;
+  text-transform: uppercase;
   color:#424242;
 }
 body h4{
@@ -55,21 +55,21 @@ body p{
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-                                                /*Scrollbar*/
+/*Scrollbar*/
 ::-webkit-scrollbar {
   width: 5px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
- /*Track piece*/
- ::-webkit-scrollbar-track-piece{
+/*Track piece*/
+::-webkit-scrollbar-track-piece{
 	background:none;
- }
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 6px;
@@ -80,8 +80,8 @@ body p{
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4); 
 }
-                                         /*Animations*/
-   /*Slide left*/
+/*Animations*/
+/*Slide left*/
 .animation-element.slide-left {
   opacity: 0;
   -moz-transition: all 700ms linear;
@@ -103,7 +103,7 @@ body p{
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-   /*Bounce up*/
+/*Bounce up*/
 .bounce-up  {
   opacity: 0;
   -moz-transition: all 700ms ease-out;
@@ -128,7 +128,7 @@ body p{
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-                                            /***menu styling***/
+/***menu styling***/
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -158,23 +158,24 @@ body p{
   display: block;
   text-decoration: none;
   color: #999;
-	font-size:2em;
+  font-size:2em;
   font-family: 'Poiret One', cursive;
-	padding-top: 2em;
+  padding-top: 2em;
   -webkit-transition: all 1s ease; 
-    -moz-transition: all 1s ease; 
-    -ms-transition: all 1s ease; 
-    -o-transition: all 1s ease; 
-    transition: all 1s ease;
+  -moz-transition: all 1s ease; 
+  -ms-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+  transition: all 1s ease;
+  z-index: 1;
 }
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
   -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
+  -moz-transform:scale(1.25); 
+  -ms-transform:scale(1.25); 
+  -o-transform:scale(1.25); 
+  transform:scale(1.25);
 }
 
 .sidebar-nav li a:active,
@@ -199,16 +200,17 @@ body p{
 #menu-toggle {
   z-index: 99;
   position: fixed;
-  top: 1em;
+  top: 1.2em;
   right: 1em;
   color: #58C9B9;
   cursor:pointer;
 }
 #menu-close{
 	float:right;
-  margin-top:0.5em;
+  margin-top:-2em;
   margin-right: 1em;
-	color:#fff;
+  color:#fff;
+  z-index: 9;
 }
 #sidebar-wrapper.active {
   right: 100vw;
@@ -219,26 +221,26 @@ body p{
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
-                                            /***Header styling***/
+/***Header styling***/
 #myVideo{
 	width: 100vw;
 	height: 100vh;
 	background-size: 100%;
- 	background-color: black;
+  background-color: black;
   background-position: center;
   background-size: contain;
   object-fit: cover; 
-	}
-	#section .layer{
+}
+#section .layer{
 	position: absolute;
 	z-index: 4;
 	width: 100%;
 	top: 7em;
-	}
-	#section{
+}
+#section{
 	overflow: hidden;
-	}
-	
+}
+
 .arrow {
   position:absolute;
   bottom: 0;
@@ -295,83 +297,85 @@ body p{
   }
 }
 .name{
-	margin:0 3em;
+	margin:3em 3em;
 	word-wrap: break-word;
   max-width: 600px;
 }
-                                          /***About section styling***/
+/***About section styling***/
 .about {
   min-height:47em;
   margin:0 auto;
 }
-.slider {
-  width: 60%;
-  min-height: 47em;
-  overflow: hidden;
-  display: inline-block;
-  transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  transition: width 1.2s ease-in-out;
-  margin-left: -9em;
-  border-right: 5px solid #000;
-  pointer-events: none;
-}
-.box { 
-  width: 100%;
-  min-height: 47em;
-  padding:2em 3em;
-} 
-.box h2{
-  letter-spacing: 0.2;
-  font-size:4em;
-}
-.background {
-  transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -ms-transform: skewX(20deg);
-  -webkit-transform: skewX(20deg);
-  background: #FAFAFA;
-  color:#000;
-  margin-left: 9em;
-  padding-right: 30%; 
-  pointer-events: auto; 
-  text-align: left;
-}
-.about-brief{
-  width: 450px;
-}
-.background p{
-  font-size: 1.5em;
-}
-.skills {
-  min-height: 47em;
-  background: #111;
-  position: absolute;  
-  color:#fff;
-  text-align: right;
-  padding-top: 4em;
-}
+@media only screen and (min-width : 980px) {
+  .slider {
+    width: 60%;
+    min-height: 47em;
+    overflow: hidden;
+    display: inline-block;
+    transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transition: width 1.2s ease-in-out;
+    margin-left: -9em;
+    border-right: 5px solid #000;
+    pointer-events: none;
+  }
+  .box { 
+    width: 100%;
+    min-height: 47em;
+    padding:2em 3em;
+  } 
+  .box h2{
+    letter-spacing: 0.2;
+    font-size:4em;
+  }
+  .background {
+    transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    background: #FAFAFA;
+    color:#000;
+    margin-left: 9em;
+    padding-right: 30%; 
+    pointer-events: auto; 
+    text-align: left;
+  }
+  .about-brief{
+    width: 450px;
+  }
+  .background p{
+    font-size: 1.5em;
+  }
+  .skills {
+    min-height: 47em;
+    background: #111;
+    position: absolute;  
+    color:#fff;
+    text-align: right;
+    padding-top: 4em;
+  }
 
-.skillset > div {
-  position:relative;
-  padding:0 0;
-  margin:0 0;
-  display:inline-block;
-  width:100px;
-  height:100px;
-}
+  .skillset > div {
+    position:relative;
+    padding:0 0;
+    margin:0 0;
+    display:inline-block;
+    width:100px;
+    height:100px;
+  }
 
-.slider:hover {
-  width: 70%;
-}
-    
-.skills:hover + .slider { 
+  .slider:hover {
+    width: 70%;
+  }
+
+  .skills:hover + .slider { 
    width: 50%;
+ }
 }
 
-                                            /***projects styling***/
+/***projects styling***/
 #projects:after {
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
@@ -388,8 +392,8 @@ body p{
 .projects {
   padding-top:2em;
   padding-bottom: 10em;
-	background-color:#111;
-	margin-bottom: 2em;
+  background-color:#111;
+  margin-bottom: 2em;
   z-index:0;
 }
 .projects h2{
@@ -397,7 +401,7 @@ body p{
   text-transform: uppercase;
 }
 .project-brief p{
-  font-size: 0.95em;
+  font-size: 1.5em;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -420,7 +424,7 @@ body p{
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .carousel-fade .carousel-control {
   z-index: 2;
@@ -430,24 +434,24 @@ body p{
   color:#58C9B9;
 }
 .carousel-indicators li {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    box-shadow: inset 1px 1px 1px 1px rgba(88,201,185,0.5);    
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 10px;  
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 1px 1px 1px 1px rgba(88,201,185,0.5);    
 }
 .carousel-indicators .active {
-    width: 48px;
-    height: 48px;
-    margin: 10px;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
 }
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 500px;
+  max-height: 1500px;
 }
 .item{
   background:#FAFAFA;
@@ -460,7 +464,6 @@ body p{
   font-size: 2.5em;
 }
 .project-brief{
-  font-size: 1.5em;
   padding-top:2em;
   padding-bottom: 2em;
   text-align: right;
@@ -468,6 +471,7 @@ body p{
 }
 .project-links{
   text-align: center;
+  margin-bottom: 2em;
 }
 .project-links a{
   text-decoration: none;
@@ -480,10 +484,10 @@ body p{
 }
 
 
-                                            /***Contact styling***/
+/***Contact styling***/
 #contact{
   padding-top: 6em;
-	background:#fff;
+  background:#fff;
 }
 #contact h2{
   text-transform: uppercase;
@@ -663,7 +667,7 @@ div.hr div:first-child {
 div.hr div:last-child {
   margin-left: 20px;
 }
-                                          /***Footer styling***/
+/***Footer styling***/
 footer{
   background:#111;
   text-align:center;
@@ -685,76 +689,4 @@ footer{
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
-@media only screen and (max-width: 500px) {
-    body h1{
-      font-size:3em;
-    }
-    .about{
-      display:none;
-    }
-    .background{
-      width:100%;
-    }
-    body h2{
-      font-size:1.8em;
-    }
-    body h3{
-      font-size:1.2em;
-    }
-    body h4{
-      font-size:1em;
-    }
-    .project-desc{
-      padding-top:1em;
-      padding-bottom: 3em;
-    }
-    .project-brief{
-      font-size: 1.2em;
-      padding-top:2em;
-      padding-bottom: 2em;
-      text-align: right;
-      margin-right: 3em;
-    }
-    .project-name{
-      font-size: 1.7em;
-    }
-    .form-control{
-      font-size: 0.9em;
-    }
-    .footer-text{
-      font-size: 0.8em;
-    }
-}
-@media only screen (max-width: 768px) {
-    body h1{
-      font-size:4em;
-    }
-    .about{
-      display:none;
-    }
-    body h2{
-      font-size:2em;
-    }
-    body h3{
-      font-size:1.3em;
-    }
-    body h4{
-      font-size:1.1em;
-    }
-    .project-name{
-      font-size: 1.5em;
-    }
-    .project-brief{
-      font-size: 1.3em;
-      padding-top:1em;
-      padding-bottom: 1em;
-      text-align: right;
-      margin-right: 3em;
-    }
-    .form-control{
-      font-size: 1.2em;
-    }
-    .footer-text{
-      font-size: 1em;
-    }
-}
+

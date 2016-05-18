@@ -1,0 +1,297 @@
+/* ======= (portrait and landscape phone) ======= */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body h1{
+  		font-family: "Fanwood Text";
+		color:#fff;
+		font-size: 2.5em;
+  		font-weight: normal;
+	}
+	body h2{
+		font-size:1.8em;
+		letter-spacing:0.1em;
+  		font-family: 'Raleway', sans-serif;
+	}
+	body h3{
+  		font-family: "Fanwood Text";
+		font-size:1.5em;
+		text-transform: uppercase;
+  		color:#424242;
+	}
+	body h4{
+		text-align:center;
+		font-size:1.3em;
+		color:#333;
+  		font-family: 'Raleway', sans-serif;
+	}
+	body p{
+  		font-family:'Fanwood Text';
+  		font-size: 0.9em;
+  		color:#000;
+	}
+	.sidebar-nav {
+  		position: absolute;
+  		top: 0;
+  		width: 100vw;
+  		margin: 0;
+  		padding-top: 2em;
+  		text-align: center;
+  		list-style: none;
+	}
+	.sidebar-nav li a {
+  		display: block;
+  		text-decoration: none;
+  		color: #999;
+		font-size:2em;
+  		font-family: 'Poiret One', cursive;
+		padding-top: 1.5em;
+  		-webkit-transition: all 1s ease; 
+    	-moz-transition: all 1s ease; 
+    	-ms-transition: all 1s ease; 
+    	-o-transition: all 1s ease; 
+    	transition: all 1s ease;
+	}
+	.skills{
+		display:none;
+	}
+	.about{
+		min-height: 20em;
+	}
+	.background{
+		padding-right: 1.5em;
+		padding-left:1.5em;
+	}
+	.projects{
+		padding-top: 1em;
+	}
+	.project-brief p{
+  		font-size: 1.1em;
+	}
+	.project-desc{
+  		padding-top:1em;
+  		padding-bottom: 1em;
+	}
+	.project-name{
+  		font-size: 1.8em;
+	}
+	.project-brief{
+  		padding-top:2em;
+  		padding-bottom: 0.5em;
+  		text-align: right;
+  		margin-right: 3em;
+	}
+	#contactForm .input-group span i {
+  		font-size: 1.2em;
+  		color: #58C9B9;
+	}
+	#contactForm input.form-control {
+  		font-size: 1em;
+	}
+} 
+/* ======= iPads (portrait and landscape) ======= */ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 980px) {
+ body h1{
+  		font-family: "Fanwood Text";
+		color:#fff;
+		font-size: 4.5em;
+  		font-weight: normal;
+	}
+	body h2{
+		font-size:3.5em;
+		letter-spacing:0.1em;
+  		font-family: 'Raleway', sans-serif;
+	}
+	body h3{
+  		font-family: "Fanwood Text";
+		font-size:2em;
+		text-transform: uppercase;
+  		color:#424242;
+	}
+	body h4{
+		text-align:center;
+		font-size:1.8em;
+		color:#333;
+  		font-family: 'Raleway', sans-serif;
+	}
+	body p{
+  		font-family:'Fanwood Text';
+  		font-size: 2em;
+  		color:#000;
+	}
+	.sidebar-nav {
+  		position: absolute;
+  		top: 0;
+  		width: 100vw;
+  		margin: 0;
+  		padding-top: 3em;
+  		text-align: center;
+  		list-style: none;
+	}
+	.sidebar-nav li a {
+  		display: block;
+  		text-decoration: none;
+  		color: #999;
+		font-size:2.5em;
+  		font-family: 'Poiret One', cursive;
+		padding-top: 1.8em;
+  		-webkit-transition: all 1s ease; 
+    	-moz-transition: all 1s ease; 
+    	-ms-transition: all 1s ease; 
+    	-o-transition: all 1s ease; 
+    	transition: all 1s ease;
+	}
+	.name{
+		margin:7em 3em;
+		word-wrap: break-word;
+  		max-width: 500px;
+	}
+	.skills{
+		display:none;
+	}
+	.about{
+		min-height: 40em;
+	}
+	.background{
+		padding-right: 3.5em;
+		padding-left:3.5em;
+		padding-bottom: 2.5em;
+		padding-top: 2.5em;
+	}
+	.projects{
+		padding-top: 1.5em;
+	}
+	.project-brief p{
+  		font-size: 0.5em;
+	}
+	.project-desc{
+  		padding-top:1em;
+  		padding-bottom: 1em;
+	}
+	.project-name{
+  		font-size: 2.5em;
+	}
+	.project-brief{
+  		padding-top:2em;
+  		padding-bottom: 2em;
+  		text-align: right;
+  		margin-right: 3em;
+	}
+	#contactForm .input-group span i {
+  		font-size: 1.5em;
+  		color: #58C9B9;
+	}
+	#contactForm input.form-control {
+  		font-size: 1.5em;
+	}
+ } 
+
+ @media only screen and (max-width: 500px) {
+  body h1{
+    font-size:3em;
+  }
+  .background{
+    width:100%;
+  }
+  body h2{
+    font-size:1.8em;
+  }
+  body h3{
+    font-size:1.2em;
+  }
+  body h4{
+    font-size:1em;
+  }
+  .name{
+    margin:6em 3em;
+    word-wrap: break-word;
+    max-width: 450px;
+  }
+  .about{
+    min-height: 40em;
+  }
+  .background{
+    padding-right: 3.5em;
+    padding-left:3.5em;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+      }
+  .skills{
+    display:none;
+  }
+  .project-desc{
+    padding-top:1em;
+    padding-bottom: 1em;
+  }
+  .project-brief{
+    font-size: 1.2em;
+    padding-top:0.5em;
+    padding-bottom: 1.5em;
+    text-align: right;
+    margin-right: 3em;
+  }
+  .project-brief p{
+    font-size: 1.1em;
+  }
+  .carousel{
+    margin-bottom: 3em;
+  }
+  .project-name{
+    font-size: 1.7em;
+  }
+  .form-control{
+    font-size: 0.9em;
+  }
+  .footer-text{
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 500px) and (max-width: 980px) {
+  body h1{
+    font-size:3em;
+  }
+  body h2{
+    font-size:2em;
+  }
+  body h3{
+    font-size:1.3em;
+  }
+  body h4{
+    font-size:1.1em;
+  }
+  .name{
+    margin:6em 3em;
+    word-wrap: break-word;
+    max-width: 400px;
+  }
+  .about{
+    min-height: 40em;
+  }
+  .background{
+    padding-right: 3.5em;
+    padding-left:3.5em;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+    font-size: 1.2em;
+  }
+  .skills{
+    display:none;
+  }
+  .project-name{
+    font-size: 1.5em;
+  }
+  .project-brief{
+    font-size: 1.3em;
+    padding-top:1em;
+    padding-bottom: 0.5em;
+    text-align: right;
+    margin-right: 3em;
+  }
+  .project-brief p{
+    font-size: 1.1em;
+  }
+  .form-control{
+    font-size: 1.2em;
+  }
+  .footer-text{
+    font-size: 1em;
+  }
+}
