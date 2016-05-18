@@ -1,6 +1,9 @@
 body{
 	margin:0 0;
 	font-family: "Fanwood Text";
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -335,7 +338,10 @@ body p{
     -moz-transform: skewX(20deg);
     -ms-transform: skewX(20deg);
     -webkit-transform: skewX(20deg);
-    background: #FAFAFA;
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #ECE9E6, #FFFFFF);
+    background: -o-linear-gradient(right, #ECE9E6, #FFFFFF);
+    background: linear-gradient(to left, #ECE9E6, #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     color:#000;
     margin-left: 9em;
     padding-right: 30%; 
@@ -487,7 +493,9 @@ body p{
 /***Contact styling***/
 #contact{
   padding-top: 6em;
-  background:#fff;
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
 }
 #contact h2{
   text-transform: uppercase;
